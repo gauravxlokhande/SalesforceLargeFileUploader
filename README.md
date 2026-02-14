@@ -157,10 +157,4 @@ Use chunk upload only when custom control is required.
 ## 👨‍💻 Developed By
 
 **Gaurav Lokhande**
-Salesforce Developer
-
----
-
-## 🏷 Tags
-
-Salesforce · LWC · Apex · File Upload · Chunk Upload · Enterprise Architecture · CRM Development
+(Salesforce Developer)
