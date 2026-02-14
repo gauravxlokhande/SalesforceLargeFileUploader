@@ -1,0 +1,33 @@
+<!-- 
+* Developer: Gaurav Lokhande
+* Date: 14 FEB 2026
+* UseCase: This uploader is developed for overriding salesforce limitiations on upload files and allow us to upload big file till 2 GB
+* Location: Bengaluru
+* Email: gaurravlokhande@gmail.com
+ -->
+<template>
+    <lightning-card title="Salesforce Large File Uploader" icon-name="utility:upload">
+
+        <div class="slds-p-around_medium slds-grid_align-center slds-text-align_center ">
+
+            <p class="slds-text-body_small slds-m-bottom_small">
+                Upload files (Max size: 25MB per file). Supported formats: PDF, PNG, JPG, XLSX.
+            </p>
+
+            <lightning-file-upload
+                label="Select Files"
+                record-id={recordId}
+                multiple
+                accept=".pdf,.png,.jpg,.jpeg,.xlsx"
+                onuploadfinished={handleUploadFinished}>
+            </lightning-file-upload>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="slds-p-horizontal_medium slds-p-vertical_small slds-border_top slds-text-align_center slds-text-body_small slds-text-color_weak">
+            Developed by Gaurav Lokhande
+        </div>
+
+    </lightning-card>
+</template>
